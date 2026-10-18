@@ -1,94 +1,52 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-    <title>Moje aplikacje</title>
-
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f5f5f7;
-            color: #1d1d1f;
-            margin: 0;
-        }
-
-        header {
-            background: #ffffff;
-            padding: 40px;
-            text-align: center;
-        }
-
-        main {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 20px;
-        }
-
-        .card {
-            background: white;
-            padding: 25px;
-            margin-bottom: 20px;
-            border-radius: 15px;
-        }
-
-        a {
-            color: #007aff;
-            text-decoration: none;
-        }
-
-        footer {
-            text-align: center;
-            padding: 30px;
-            color: gray;
-        }
-    </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#f7faff">
+  <meta name="description" content="PingPongTracking — wyniki, statystyki i historia rozgrywek tenisa stołowego. Aplikacja na iPhone i Apple Watch. Wkrótce dostępna.">
+  <title>PingPongTracking — Twoja gra. Twoje statystyki.</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
 </head>
-
 <body>
-
-<header>
-    <h1>Moje aplikacje</h1>
-    <p>Witaj na oficjalnej stronie moich projektów!</p>
-</header>
-
-<main>
-
-    <div class="card">
-        <h2>O moich aplikacjach</h2>
-        <p>
-            Tworzę aplikacje na urządzenia Apple,
-            wykorzystując język Swift.
-        </p>
-    </div>
-
-    <div class="card">
-        <h2>Pomoc techniczna</h2>
-        <p>
-            Potrzebujesz pomocy?
-            Przejdź do centrum wsparcia.
-        </p>
-
-        <a href="support.html">Centrum pomocy →</a>
-    </div>
-
-    <div class="card">
-        <h2>Prywatność</h2>
-        <p>
-            Dowiedz się, jak moje aplikacje
-            przetwarzają dane.
-        </p>
-
-        <a href="privacy.html">Polityka prywatności →</a>
-    </div>
-
-</main>
-
-<footer>
-    <p>© 2026 Moje aplikacje</p>
-</footer>
-
+  <a class="skip-link" href="#main" data-i18n="skip">Przejdź do treści</a>
+  <header class="nav-wrap"><nav class="nav container" aria-label="Main navigation">
+    <a class="brand" href="#top" aria-label="PingPongTracking"><span class="brand-symbol" aria-hidden="true">●<span>↗</span></span> PingPong<span class="brand-light">Tracking</span></a>
+    <div class="nav-links"><a href="#features" data-i18n="navFeatures">Funkcje</a><a href="#screenshots" data-i18n="navScreens">Zrzuty ekranu</a><a href="#about" data-i18n="navAbout">O aplikacji</a></div>
+    <div class="nav-right"><button class="lang-switch" type="button" id="language-switch" aria-label="Switch language" aria-pressed="false">EN <span aria-hidden="true">↗</span></button><a class="nav-cta" href="#availability" data-i18n="navCta">Wkrótce</a></div>
+  </nav></header>
+  <main id="main">
+    <section class="hero container" id="top">
+      <div class="hero-copy"><div class="eyebrow"><span class="pulse"></span><span data-i18n="comingSoon">Już wkrótce na iOS i watchOS</span></div>
+        <h1><span data-i18n="heroLine1">Każdy punkt</span><br><span class="gradient-text" data-i18n="heroLine2">ma znaczenie.</span></h1>
+        <p class="lead" data-i18n="heroDesc">Śledź wyniki, poznawaj statystyki i wracaj do historii swoich rozgrywek. Tenis stołowy w liczbach — w jednym miejscu.</p>
+        <div class="hero-actions"><a class="primary-button" href="#features"><span data-i18n="explore">Poznaj funkcje</span><span aria-hidden="true">↗</span></a><a class="secondary-button" href="#screenshots" data-i18n="seeScreens">Zobacz galerię ↓</a></div>
+        <p class="device-line"><span aria-hidden="true">⌁</span><span data-i18n="devices">Projektowana na iPhone'a i Apple Watch</span></p>
+      </div>
+      <div class="hero-art" aria-hidden="true"><div class="orbit orbit-1"></div><div class="orbit orbit-2"></div><div class="table-illustration"><div class="table-net"></div><div class="table-line table-line-a"></div><div class="table-line table-line-b"></div></div><div class="ball ball-main"></div><div class="glass-tile tile-one"><span class="tile-icon">↗</span><span class="tile-graph">▁▂▄▃▅▆</span></div><div class="glass-tile tile-two"><span class="tile-dot"></span><span class="tile-bars"><i></i><i></i><i></i><i></i><i></i></span></div></div>
+    </section>
+    <section class="section section-alt" id="features"><div class="container"><div class="section-intro"><p class="section-kicker" data-i18n="featureKicker">MOŻLIWOŚCI</p><h2 data-i18n="featureTitle">Więcej niż wynik meczu.</h2><p data-i18n="featureLead">Najważniejsze informacje o Twojej grze w przejrzystym miejscu.</p></div>
+    <div class="feature-grid">
+      <article class="feature-card featured"><div class="feature-symbol">◎</div><h3 data-i18n="f1Title">Wyniki i punkty</h3><p data-i18n="f1Body">Licz punkty i zapisuj rezultaty swoich meczów.</p><div class="score-graphic" aria-hidden="true"><span>11</span><b>:</b><span>09</span></div></article>
+      <article class="feature-card"><div class="feature-symbol">▥</div><h3 data-i18n="f2Title">Statystyki meczów</h3><p data-i18n="f2Body">Zaglądaj do statystyk swoich rozgrywek.</p></article>
+      <article class="feature-card"><div class="feature-symbol">◷</div><h3 data-i18n="f3Title">Historia rozgrywek</h3><p data-i18n="f3Body">Wracaj do wcześniej zapisanych meczów.</p></article>
+      <article class="feature-card"><div class="feature-symbol">♜</div><h3 data-i18n="f4Title">Turnieje</h3><p data-i18n="f4Body">Korzystaj z funkcji turniejowych w jednym miejscu.</p></article>
+      <article class="feature-card"><div class="feature-symbol">⌁</div><h3 data-i18n="f5Title">Wykresy i analizy</h3><p data-i18n="f5Body">Przeglądaj dane swojej gry w formie wykresów.</p></article>
+      <article class="feature-card"><div class="feature-symbol">♙</div><h3 data-i18n="f6Title">Profile graczy</h3><p data-i18n="f6Body">Zarządzaj profilami zawodników.</p></article>
+      <article class="feature-card"><div class="feature-symbol">⟳</div><h3 data-i18n="f7Title">Synchronizacja danych</h3><p data-i18n="f7Body">Korzystaj z synchronizacji danych aplikacji.</p></article>
+    </div></div></section>
+    <section class="section" id="screenshots"><div class="container"><div class="section-intro"><p class="section-kicker" data-i18n="screensKicker">PODGLĄD</p><h2 data-i18n="screensTitle">Zobacz aplikację.</h2><p data-i18n="screensLead">Tu pojawią się oficjalne zrzuty ekranu PingPongTracking.</p></div>
+      <div class="carousel-shell"><button class="carousel-arrow" id="prev" type="button" aria-label="Previous screenshot">‹</button><div class="carousel-viewport" id="carousel-viewport" tabindex="0" aria-label="Screenshots carousel"><div class="carousel-track" id="carousel-track">
+        <div class="screenshot-slide"><div class="phone-mockup"><div class="phone-camera"></div><img src="assets/screenshots/01.png" alt="" data-fallback="1"><div class="placeholder"><span class="placeholder-icon">▤</span><span data-i18n="placeholder1">Zrzut ekranu 1</span><small>assets/screenshots/01.png</small></div></div></div>
+        <div class="screenshot-slide"><div class="phone-mockup"><div class="phone-camera"></div><img src="assets/screenshots/02.png" alt="" data-fallback="2"><div class="placeholder"><span class="placeholder-icon">▥</span><span data-i18n="placeholder2">Zrzut ekranu 2</span><small>assets/screenshots/02.png</small></div></div></div>
+        <div class="screenshot-slide"><div class="phone-mockup"><div class="phone-camera"></div><img src="assets/screenshots/03.png" alt="" data-fallback="3"><div class="placeholder"><span class="placeholder-icon">⌁</span><span data-i18n="placeholder3">Zrzut ekranu 3</span><small>assets/screenshots/03.png</small></div></div></div>
+        <div class="screenshot-slide"><div class="phone-mockup"><div class="phone-camera"></div><img src="assets/screenshots/04.png" alt="" data-fallback="4"><div class="placeholder"><span class="placeholder-icon">◎</span><span data-i18n="placeholder4">Zrzut ekranu 4</span><small>assets/screenshots/04.png</small></div></div></div>
+      </div></div><button class="carousel-arrow" id="next" type="button" aria-label="Next screenshot">›</button></div><div class="carousel-dots" id="carousel-dots" aria-label="Slide selection"></div><p class="screenshot-note" data-i18n="screenshotNote">Zrzuty dodasz później — wystarczy podmienić pliki PNG.</p>
+    </div></section>
+    <section class="section about-section" id="about"><div class="container about-grid"><div><p class="section-kicker" data-i18n="aboutKicker">W TWOIM RYTMIE</p><h2 data-i18n="aboutTitle">Skup się na grze.<br>Resztę miej pod ręką.</h2></div><div><p class="about-text" data-i18n="aboutBody">PingPongTracking to aplikacja poświęcona tenisowi stołowemu. Łączy liczenie punktów, wyniki, historię meczów, statystyki, profile graczy, turnieje i analizę danych.</p><div class="platform-row"><span class="platform-pill">iOS</span><span class="platform-pill">watchOS</span></div></div></div></section>
+    <section class="availability-section" id="availability"><div class="container availability-inner"><span class="availability-icon" aria-hidden="true">◉</span><p class="section-kicker" data-i18n="releaseKicker">NADCHODZI</p><h2 data-i18n="releaseTitle">Do zobaczenia przy stole.</h2><p data-i18n="releaseBody">PingPongTracking nie jest jeszcze dostępna w App Store. Informacje o premierze pojawią się tutaj.</p><div class="coming-tag"><span class="pulse"></span><span data-i18n="releaseTag">Premiera w przygotowaniu</span></div></div></section>
+  </main>
+  <footer class="footer"><div class="container footer-inner"><a href="#top" class="footer-brand">PingPongTracking</a><div class="footer-links"><a href="support.html" data-i18n="support">Pomoc techniczna</a><a href="privacy.html" data-i18n="privacy">Polityka prywatności</a></div><small>© <span id="year">2026</span> PingPongTracking</small></div></footer>
 </body>
 </html>
